@@ -1,0 +1,59 @@
+\documentclass{article}
+\usepackage{longtable}
+\usepackage{graphicx}
+\usepackage{url}
+\usepackage[utf8]{inputenc}
+\usepackage{enumerate}
+ 
+\renewcommand{\labelitemi}{$\Box$}
+\renewcommand{\labelitemi}{$\star$}
+\renewcommand{\labelenumi}{\theenumi}
+
+\usepackage{enumitem,amssymb}
+\newlist{todolist}{itemize}{2}
+\setlist[todolist]{label=$\square$}
+
+\usepackage{geometry}
+ \geometry{
+ a4paper,
+ total={170mm,257mm},
+ left=10mm,
+ top=10mm,
+ }
+
+\title{Software Quality Assurance Testing MAD5234 2020F}
+\author{Peter Sigurdson}
+\date{September 2020}
+
+\begin{document}
+
+\maketitle
+\includegraphics[scale=.5]{img/MarsClimateOrbiter.png}
+\url{https://t2m.io/MAD5234CourseVisualRoadmap}
+\input{evalutionschedule}
+\input{forward}
+
+\newpage
+
+\section * {Introduction}
+ This course is an introduction to the principles of software quality assurance. \\
+ The course addresses the concepts and practices of a software quality assurance function, as well as those aspects of:
+ \begin{itemize}
+     \item  project management, 
+     \item  software design,      
+     \item  and testing and configuration management,     
+ \end{itemize}
+ as applicable to the development of quality software products.
+ \newline
+ 
+ \section * {Practices of Software Quality Assurance}   
+ \begin{itemize}
+     \item Project Management for Software Quality Assurance
+     \item Software Design     
+     \item Testing and Configuration Management     
+ \end{itemize}
+
+\input{DevelopingBugs}
+\input{teachingDayPlan}
+
+\end{document}
